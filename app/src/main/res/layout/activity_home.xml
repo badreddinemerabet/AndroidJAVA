@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/warehouse"
+    tools:context=".Home"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="Welcome"
+                    android:textColor="#393838"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/welcomeT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="User"
+                    android:textColor="#393838"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    >
+
+                    <Button
+                        android:id="@+id/SellesBtn"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginBottom="10dp"
+                        android:onClick="OpenSell"
+                        android:background="@drawable/sellbtn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/StockBtn"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/stockbtn"
+                        android:onClick="OpenStock" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ProfilBtn"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/profilbtn"
+                        android:onClick="OpenProfil" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/PruchaseBtn"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:onClick="OpenAdd"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/purchasebtn"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/HistoryBtn"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:onClick="OpenHistory"
+                    android:background="@drawable/historybtn"/>
+                <Button
+                    android:id="@+id/DeleteBtn"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:onClick="OpenDelete"
+                    android:background="@drawable/deletebtn"
+                    android:layout_marginLeft="60dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="right|bottom"
+                android:layout_marginTop="50dp"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:id="@+id/LogoutBtn"
+                    android:layout_width="128dp"
+                    android:layout_height="50dp"
+                    android:onClick="LogOut"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/bgbutton"
+                    android:text="Logout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
